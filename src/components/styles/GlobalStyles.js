@@ -223,12 +223,10 @@ export const baseStyles = css`
   }
   .headerTitle {
     height: auto;
-    font-size: 16px;
+    font-size: 1.25rem;
     line-height: 1.5;
-    font-weight: 300;
-    color: #fff !important;
-    margin-top: 16px;
-    text-transform: uppercase;
+    font-weight: 400;
+    color: #ffc107 !important;
   }
   .headerTitle a {
     color: #fff;
@@ -257,7 +255,7 @@ export const baseStyles = css`
     padding: 0 !important;
   }
   .navBarDefault {
-    background-color: #001934;
+    background-color: rgb(52, 58, 64);
     border-radius: 0;
     border-top: 0;
     margin-bottom: 0;
@@ -274,7 +272,6 @@ export const baseStyles = css`
     height: 80px;
   }
   .navBarHeader {
-    min-width: 335px;
     padding-right: 20px;
     display: flex;
     align-items: center;
@@ -286,7 +283,7 @@ export const baseStyles = css`
   }
 
   .navBarBrand img {
-    width: 120px;
+    width: 60px;
     margin-right: 6px;
     display: inline-block;
   }
