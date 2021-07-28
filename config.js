@@ -8,9 +8,9 @@ const config = {
   header: {
       logo: 'https://cryptoring.tech/images/logo.png',
       logoLink: '/',
-    title:
-      "CryptoRing",
-    githubUrl: '',
+    title: "CryptoRing",
+    githubUrl: 'https://github.com/CryptoRingTech/cryptoring_docs',
+    darkmodeSwitch: false,
     helpUrl: '',
     tweetText: '',
     social: `<li>
@@ -35,24 +35,28 @@ const config = {
   sidebar: {
     forcedNavOrder: [
       '/introduction', // add trailing slash if enabled above
-      '/codeblock',
+      '/getting_started',
+      '/connectors',
+      '/datastreams',
+      '/api',
+      '/labguage_bindings',
     ],
     collapsedNav: [
-      '/codeblock', // add trailing slash if enabled above
+        //'/codeblock', // add trailing slash if enabled above
     ],
-    links: [{ text: 'Hasura', link: 'https://hasura.io' }],
+    links: [{ text: 'link', link: '' }],
     frontline: false,
     ignoreIndex: true,
-    title:
-      "<a href='https://hasura.io/learn/'>graphql </a><div class='greenCircle'></div><a href='https://hasura.io/learn/graphql/react/introduction/'>react</a>",
+    title: false,
+      //"<a href='https://hasura.io/learn/'>graphql </a><div class='greenCircle'></div><a href='https://hasura.io/learn/graphql/react/introduction/'>react</a>",
   },
-  siteMetadata: {
-    title: 'Gatsby Gitbook Boilerplate | Hasura',
-    description: 'Documentation built with mdx. Powering hasura.io/learn ',
-    ogImage: null,
-    docsLocation: 'https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content',
-    favicon: 'https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg',
-  },
+    siteMetadata: {
+        title: 'CryptoRing Platform Documentation',
+        description: 'Documentation for CryptoRing Platform developers',
+        ogImage: null,
+        docsLocation: 'https://github.com/CryptoRingTech/cryptoring_docs/blob/master/content',
+        favicon: '',
+    },
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.
     manifest: {

@@ -183,12 +183,14 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                     </GitHubButton>
                   </li>
                 ) : null}
+                {false ? (
                 <li>
                   <DarkModeSwitch
                     isDarkThemeActive={isDarkThemeActive}
                     toggleActiveTheme={toggleActiveTheme}
                   />
                 </li>
+                ) : null}
                 <li style={{width: 'calc(100vw - 45rem)'}}>&nbsp;</li>
                   <li className={'m-2'}>
                       <a
