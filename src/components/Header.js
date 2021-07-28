@@ -70,6 +70,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
             headerLinks {
               link
               text
+              disabled
             }
           }
         }
@@ -127,10 +128,11 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
               <ul className={'navBarUL navBarNav navBarULRight'}>
                 {headerLinks.map((link, key) => {
                   if (link.link !== '' && link.text !== '') {
+                      console.log(link);
                     return (
                       <li key={key}>
                         <a
-                          className="sidebarLink"
+                          className={`sidebarLink ${link.disabled ? 'disabled' : ''}`}
                           href={link.link}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -187,6 +189,23 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                     toggleActiveTheme={toggleActiveTheme}
                   />
                 </li>
+                <li style={{width: 'calc(100vw - 45rem)'}}>&nbsp;</li>
+                  <li className={'m-2'}>
+                      <a
+                      className={'btnLogin'}
+                      href="/login"
+                      >
+                          Login
+                      </a>
+                  </li>
+                  <li className={'m-2'}>
+                      <a
+                      className={'btnRegister'}
+                      href="/register"
+                      >
+                          Register
+                      </a>
+                  </li>
               </ul>
             </div>
           </nav>

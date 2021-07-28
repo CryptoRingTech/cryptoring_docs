@@ -890,4 +890,46 @@ export const baseStyles = css`
       padding-left: 0px;
     }
   }
+
+  .navBarUL li a.disabled {
+    color: rgba(255, 255, 255, 0.25) !important;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .btnLogin, .btnRegister {
+    padding: 0.5rem;
+    display: block;
+    line-height: 1.5;
+    border: 1px #ffc107 solid;
+    border-radius: 0.2em;
+    background-color: transparent;
+  }
+
+  .navBarUL li a.btnLogin {
+    color: #ffc107 !important;
+    border: 1px #ffc107 solid;
+  }
+
+  .navBarUL li a.btnLogin:hover {
+    color: #ba8b00 !important;
+    border: 1px #ffc107 solid;
+    background-color: #ffc107;
+  }
+
+  .navBarUL li a.btnRegister {
+    color: #343a40 !important;
+    border: 1px #ffc107 solid;
+    background-color: #ffc107;
+  }
+
+  .navBarUL li a.btnLogin:hover {
+    color: #ba8b00 !important;
+    border: 1px #ffc107 solid;
+    background-color: #ffc107;
+  }
+
+  .m-2 {
+    margin: 0.5rem !important;
+  }
 `;
