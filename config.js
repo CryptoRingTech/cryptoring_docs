@@ -1,8 +1,8 @@
 const config = {
   gatsby: {
-    pathPrefix: '/',
+    pathPrefix: '/doc',
     siteUrl: 'https://cryptoring.tech',
-    gaTrackingId: null,
+    gaTrackingId: 'G-3YXWX9Q5E6',
     trailingSlash: false,
   },
   header: {
@@ -36,15 +36,11 @@ const config = {
     forcedNavOrder: [
       '/introduction', // add trailing slash if enabled above
       '/getting_started',
-      '/connectors',
-      '/datastreams',
-      '/api',
-      '/labguage_bindings',
     ],
     collapsedNav: [
         //'/codeblock', // add trailing slash if enabled above
     ],
-    links: [{ text: 'link', link: '' }],
+    links: [{ text: '', link: '' }],
     frontline: false,
     ignoreIndex: true,
     title: false,
