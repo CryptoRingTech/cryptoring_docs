@@ -48,6 +48,14 @@ const plugins = [
       anonymize: false,
     },
   },
+    {
+        resolve: `gatsby-plugin-s3`,
+        options: {
+            bucketName: 'cryptoring-static',
+            region: 'sfo3',
+            customAwsEndpointHostname: 'sfo3.digitaloceanspaces.com'
+        },
+    },
 ];
 // check and add algolia
 if (config.header.search && config.header.search.enabled && config.header.search.algoliaAppId && config.header.search.algoliaAdminKey) {
