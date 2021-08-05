@@ -52,6 +52,7 @@ const plugins = [
         resolve: `gatsby-plugin-s3`,
         options: {
             bucketName: 'cryptoring-static',
+            bucketPrefix: 'docs',
             region: 'sfo3',
             customAwsEndpointHostname: 'sfo3.digitaloceanspaces.com'
         },
