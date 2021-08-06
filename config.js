@@ -1,6 +1,6 @@
 const config = {
   gatsby: {
-    pathPrefix: '/doc',
+    pathPrefix: '/docs',
     siteUrl: 'https://cryptoring.tech',
     gaTrackingId: 'G-3YXWX9Q5E6',
     trailingSlash: false,
