@@ -53,8 +53,8 @@ const plugins = [
         options: {
             bucketName: 'cryptoring-static',
             bucketPrefix: 'docs',
-            region: 'sfo3',
-            customAwsEndpointHostname: 'sfo3.digitaloceanspaces.com'
+            region: 'us-east-1',
+            //customAwsEndpointHostname: 'sfo3.digitaloceanspaces.com'
         },
     },
 ];
